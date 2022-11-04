@@ -14,6 +14,8 @@ public class PrimitivosCaracteres{
             System.out.println("char corresponde en bites a " + Character.SIZE);
             System.out.println("Character.MIN_VALUE = " + Character.MIN_VALUE);
             System.out.println("Character.MAX_VALUE = " + Character.MAX_VALUE );
+
+            System.out.println("\nla concha de tu madre all boys");
         }
     }
 
