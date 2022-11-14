@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class EjercicioOpcional {
     public static void main(String[] args) {
         /*
@@ -18,5 +19,16 @@ public class EjercicioOpcional {
          * monto despues de impuesto es de 160.3882"
          */
         
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Hola, a continuacion ingrese la descripcion de la factura: ");
+        String facturaDescripcion = scanner.nextLine();
+
+        System.out.println("Ingrese el valor del primer producto: ");
+        scanner = new Scanner(System.in);
+        
+
+
+
+
     }
 }
