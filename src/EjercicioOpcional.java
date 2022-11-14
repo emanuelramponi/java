@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 public class EjercicioOpcional {
     public static void main(String[] args) {
@@ -19,16 +20,40 @@ public class EjercicioOpcional {
          * monto despues de impuesto es de 160.3882"
          */
         
+        double valorDouble1 = 0, valorDouble2 = 0;
         Scanner scanner = new Scanner(System.in);
+
         System.out.println("Hola, a continuacion ingrese la descripcion de la factura: ");
         String facturaDescripcion = scanner.nextLine();
-
-        System.out.println("Ingrese el valor del primer producto: ");
-        scanner = new Scanner(System.in);
         
+        System.out.println("Ingrese el valor del primer producto: ");
+        try {
+           valorDouble1 = scanner.nextDouble(); 
+        } catch (InputMismatchException e) {
+            System.out.println("Error! Debe ingresar un numero");
+            main(args);
+            System.exit(0);
+        }
+        System.out.println(valorDouble1);
+        
+        System.out.println("Ingrese el valor del segundo producto: ");
+        try {
+           valorDouble2 = scanner.nextDouble(); 
+        } catch (InputMismatchException e) {
+            System.out.println("Error! Debe ingresar un numero");
+            main(args);
+            System.exit(0);
+        }
+        System.out.println(valorDouble2);
 
+        scanner.close();
 
+        double total = valorDouble1 + valorDouble2;
 
+        String texto = "La factura " + facturaDescripcion + " tiene un total bruto de " + total + 
+        ", con un impuesto de " + total*0.19 + ", y el " +
+         "monto despues de impuesto es de " + total*1.19;
 
+         System.out.println(texto);
     }
 }
