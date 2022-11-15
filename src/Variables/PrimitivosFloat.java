@@ -1,3 +1,4 @@
+package Variables;
 public class PrimitivosFloat {
     static float varFlotante;
     public static void main(String[] args) {

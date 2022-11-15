@@ -1,3 +1,4 @@
+package Variables;
 public class PrimitivosEnteros {
     public static void main(String[] args) {
         System.out.println("HELLO WORLD\n");

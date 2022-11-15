@@ -1,0 +1,42 @@
+String 
+Los string son objetos de java, del tipo referencia
+String nombre = new String ("Andres"); // Se puede inicializar de esta manera 
+
+String nombre = "Andres"; // O de esta manera
+
+COMPARAR STRING 
+ - Con el operador relacional de igualdad == compara por referencia.
+ - Con el metodo equals() compara por valor
+
+ Ejemplo: 
+ String str1 = "Hola Andres";
+ String str2 = new String("Hola Andres");
+
+ //Chequea sin son del mismo objeto
+ System.out.println("Son el mismo objeto? " + (str1==str2));
+
+ //Chequea si tienen el mismo valor
+ System.out.println("Tienen el mismo valor? " + str1.equals(str2));
+
+ //
+ //
+ METODOS DE LA CLASE STRING
+ 
+    - int length():                         Numero de caracteres
+    - boolean equals(String b):             Compara si ambas son iguales, por valor
+    - boolean equalsIngnoreCase(String b):  Compara si ambas son iguales, independientemente de mayusculas o minusculas
+    - int compareTo(String b):              Compara contra la cadena del argumento, devolviendo:
+                                                - Un valor negativo si la cadena es anterior a b
+                                                - Cero (0), si la cadena es igual a b
+                                                - Un valor positivo si la cadena es posterior a b
+    
+    - String trim():                        Crea un nuevo objeto eliminando el espacio en blanco que pudiera haber al principio o al final
+    - char charAt(int position):            Extrae un carácter en la posicion indicada
+    - char[] toCharArray:                   Convierte la cadena en un arreglo de caracteres.
+    - String substring(int a, int b):       Extra la sub-cadena entre las posiciones a y b.
+    - String substring(int desde):          Extrae la sub-cadena desde la posicion indicada.
+    - int indexOf(String cadena):           Indican en que posicion se encuentra el caracter (o cadena) indicado por primera vez, buscanndo desde el principio
+    - int lasIndexOf(String cadena):        Indica en que posicion se encuentra el caracter indicado por primera vez, buscando desde el final.
+    - boolean startsWith(String prefijo):   Dice si la cadena comienza ocn el prefijo indicado.
+    - boolean endsWith(String sufijo):      Dice si la cadena termina con el sufijo indicado.
+    - String[] split(String patron):        Divide la cadena en varias subcadenas utilizando el patron indicado como separador.
