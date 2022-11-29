@@ -36,7 +36,9 @@ COMPARAR STRING
     - String substring(int a, int b):       Extra la sub-cadena entre las posiciones a y b.
     - String substring(int desde):          Extrae la sub-cadena desde la posicion indicada.
     - int indexOf(String cadena):           Indican en que posicion se encuentra el caracter (o cadena) indicado por primera vez, buscanndo desde el principio
-    - int lasIndexOf(String cadena):        Indica en que posicion se encuentra el caracter indicado por primera vez, buscando desde el final.
+    - int lastIndexOf(String cadena):        Indica en que posicion se encuentra el caracter indicado por primera vez, buscando desde el final.
     - boolean startsWith(String prefijo):   Dice si la cadena comienza ocn el prefijo indicado.
     - boolean endsWith(String sufijo):      Dice si la cadena termina con el sufijo indicado.
     - String[] split(String patron):        Divide la cadena en varias subcadenas utilizando el patron indicado como separador.
+    - String replace(target a reemplazar, string que quiero asignar) : Retorna una nueva instancia, la original queda igual
+    -String contains()                      Lanza valor booleano segun si lo encuentra o no
