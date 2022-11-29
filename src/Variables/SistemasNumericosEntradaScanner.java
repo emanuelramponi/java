@@ -31,5 +31,7 @@ public class SistemasNumericosEntradaScanner {
             "numero hexadecimal de " + numeroDecimal + " = " + Integer.toHexString(numeroDecimal) ;
 
             System.out.println(mensaje);
+
+            
     }
 }

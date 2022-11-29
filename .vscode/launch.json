@@ -1,0 +1,91 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch EjemploStringInmutable",
+            "request": "launch",
+            "mainClass": "Strings.EjemploStringInmutable",
+            "projectName": "JavaCurso_41b21d6d"
+        },
+        {
+            "type": "java",
+            "name": "Launch EjemploStringTestRendimientoConcat",
+            "request": "launch",
+            "mainClass": "Strings.EjemploStringTestRendimientoConcat",
+            "projectName": "JavaCurso_41b21d6d"
+        },
+        {
+            "type": "java",
+            "name": "Launch EjemploStrings",
+            "request": "launch",
+            "mainClass": "Strings.EjemploStrings",
+            "projectName": "JavaCurso_41b21d6d"
+        },
+        {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "Variables.App",
+            "projectName": "JavaCurso_41b21d6d"
+        },
+        {
+            "type": "java",
+            "name": "Launch ConversionDeTipos",
+            "request": "launch",
+            "mainClass": "Variables.ConversionDeTipos",
+            "projectName": "JavaCurso_41b21d6d"
+        },
+        {
+            "type": "java",
+            "name": "Launch EjercicioOpcional",
+            "request": "launch",
+            "mainClass": "Variables.EjercicioOpcional",
+            "projectName": "JavaCurso_41b21d6d"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimitivosCaracteres",
+            "request": "launch",
+            "mainClass": "Variables.PrimitivosCaracteres",
+            "projectName": "JavaCurso_41b21d6d"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimitivosEnteros",
+            "request": "launch",
+            "mainClass": "Variables.PrimitivosEnteros",
+            "projectName": "JavaCurso_41b21d6d"
+        },
+        {
+            "type": "java",
+            "name": "Launch PrimitivosFloat",
+            "request": "launch",
+            "mainClass": "Variables.PrimitivosFloat",
+            "projectName": "JavaCurso_41b21d6d"
+        },
+        {
+            "type": "java",
+            "name": "Launch SistemasNumericos",
+            "request": "launch",
+            "mainClass": "Variables.SistemasNumericos",
+            "projectName": "JavaCurso_41b21d6d"
+        },
+        {
+            "type": "java",
+            "name": "Launch SistemasNumericosEntradaScanner",
+            "request": "launch",
+            "mainClass": "Variables.SistemasNumericosEntradaScanner",
+            "projectName": "JavaCurso_41b21d6d"
+        }
+    ]
+}
