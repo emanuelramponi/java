@@ -1,5 +1,6 @@
 package Ejercicios;
 
+
 import java.util.Scanner;
 
 public class ProgramaManejoDeNombres {
@@ -14,29 +15,41 @@ public class ProgramaManejoDeNombres {
     // Ejemplo, un resultado final esperado para los nombres Andres, Maria y Pepe podría ser:
     // N.es_A.ia_E.pe
 
-        String nombre = "";
+        // String  nombre  = "";
 
-        StringBuilder sb = new StringBuilder(nombre);
 
+        String[] nombres = new String[3];
+        StringBuilder sb = new StringBuilder();
         Scanner scanner = new Scanner(System.in);
         
-        for (int i = 0; i < 3; i++) {
-            System.out.println("Ingrese el 1º nombre: ");
-            nombre = scanner.nextLine();
-            nombre = nombre.toUpperCase();
+        for (int i = 0; i < nombres.length; i++) {
+            System.out.println("Ingrese el " + (i+1) + "° nombre: ");
+            nombres[i] = scanner.nextLine();
+        }
+        // String test = "";
+        for (int i = 0; i < nombres.length; i++)
+        {
+            sb = (i==2)?
+            sb.append(nombres[i].toUpperCase().charAt(1)).append(".").append(nombres[i].substring(nombres[i].length()-2)):
+            sb.append(nombres[i].toUpperCase().charAt(1)).append(".").append(nombres[i].substring(nombres[i].length()-2)).append("_");
 
-            // String parte1 = nombre.substring(1,2);
-            // // String parte2 = nombre.sustring();
-            // int lastWord = nombre.length();
-            // int indice = lastWord - 2;
+        }
 
-            // System.out.println(parte1);
-            // sb.append(parte1);
-            // System.out.println(sb);
 
-            
-         }
-        
+        // for (int i = 0; i < nombres.length; i++) 
+        // {
+        //     System.out.println("Ingrese el " + (i+1) + "° nombre: ");
+        //     nombres[i] = scanner.nextLine();
+        // }
+        // String test = "";
+        // for (int i = 0; i < nombres.length; i++)
+        // {
+        //    test= test+ nombres[i].toUpperCase().charAt(1) + "." + nombres[i].substring(nombres[i].length()-2)+"_";
+        // }
+        // test = test.substring(0,test.length()-1);
+        // System.out.println(test);
+
+        System.out.println(sb);
         scanner.close();
     }
 }
