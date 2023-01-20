@@ -4,10 +4,12 @@ public class TestRendConcat1 {
     public static void main(String[] args) {
         String a = "a";
         String b = "b";
-        // String c = a;
+        String c = a;
 
         StringBuilder sb = new StringBuilder(a);
+        StringBuilder sb1 = new StringBuilder(c);
 
+        System.out.println(sb1);
         
         long inicio = System.currentTimeMillis();
         
