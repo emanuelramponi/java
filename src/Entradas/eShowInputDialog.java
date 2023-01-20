@@ -1,7 +1,7 @@
 package Variables;
 import javax.swing.JOptionPane;
 
-public class SistemasNumericos {
+public class JOptionPaneShowInputDialog {
     public static void main(String[] args) {
             
             String numeroStr = JOptionPane.showInputDialog(null, "Ingrese un numero entero");

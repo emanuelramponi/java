@@ -1,4 +1,4 @@
-package Variables;
+package Variables.Primitivos;
 public class PrimitivosCaracteres{
         public static void main(String[] args) {
             
