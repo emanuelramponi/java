@@ -15,27 +15,27 @@ public class ProgramaManejoDeNombres {
     // Ejemplo, un resultado final esperado para los nombres Andres, Maria y Pepe podría ser:
     // N.es_A.ia_E.pe
 
-        // String  nombre  = "";
-
-
         String[] nombres = new String[3];
         StringBuilder sb = new StringBuilder();
         Scanner scanner = new Scanner(System.in);
         
-        for (int i = 0; i < nombres.length; i++) {
+        for (int i = 0; i < nombres.length; i++) 
+        {
             System.out.println("Ingrese el " + (i+1) + "° nombre: ");
             nombres[i] = scanner.nextLine();
         }
-        // String test = "";
+        
         for (int i = 0; i < nombres.length; i++)
         {
             sb = (i==2)?
             sb.append(nombres[i].toUpperCase().charAt(1)).append(".").append(nombres[i].substring(nombres[i].length()-2)):
             sb.append(nombres[i].toUpperCase().charAt(1)).append(".").append(nombres[i].substring(nombres[i].length()-2)).append("_");
-
         }
+        System.out.println(sb);
+        scanner.close();
 
 
+        // String test = "";
         // for (int i = 0; i < nombres.length; i++) 
         // {
         //     System.out.println("Ingrese el " + (i+1) + "° nombre: ");
@@ -48,8 +48,5 @@ public class ProgramaManejoDeNombres {
         // }
         // test = test.substring(0,test.length()-1);
         // System.out.println(test);
-
-        System.out.println(sb);
-        scanner.close();
     }
 }
