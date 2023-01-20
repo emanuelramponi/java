@@ -2,7 +2,7 @@ package Strings;
 
 
 
-public class EjemploStringInmutable {
+public class Inmutabilidad {
     public static void main(String[] args) {
         String curso = "Programación Java";
         String profesor = "Andres Guzman";

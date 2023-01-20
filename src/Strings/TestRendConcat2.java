@@ -1,7 +1,7 @@
 package Strings;
 
 
-public class EjemploStringTestRendimientoConcat {
+public class TestRendConcat2 {
     public static void main(String[] args) {
         String a = "a";
         String b = "b";
@@ -17,7 +17,7 @@ public class EjemploStringTestRendimientoConcat {
         long fin = System.currentTimeMillis();
 
         System.out.println(fin - inicio);
-        System.out.println("c = " + c);
+        // System.out.println("c = " + c);
 
     }
 }

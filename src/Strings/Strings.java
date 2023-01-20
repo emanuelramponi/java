@@ -1,5 +1,5 @@
 package Strings;
-public class EjemploStrings {
+public class Strings {
     public static void main(String[] args) {
         String curso = "Programación Java";
         String curso2 = new String("Programación java");

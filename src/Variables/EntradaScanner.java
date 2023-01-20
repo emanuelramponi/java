@@ -2,7 +2,7 @@ package Variables;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class SistemasNumericosEntradaScanner {
+public class EntradaScanner {
     public static void main(String[] args) {
             //otro metodo para pasar a int mediante scanner y por medio de otra exception  
             Scanner scanner = new Scanner(System.in);

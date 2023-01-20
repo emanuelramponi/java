@@ -1,9 +1,9 @@
 package Strings;
 
-public class EjemploStringValidar {
+public class Validaciones {
     public static void main(String[] args) {
         String curso = null;
-        String curso2 = null;
+        String curso2 = "boca";
         
         boolean esNulo = curso== null;
         boolean esNulo1 = curso== null;
@@ -29,7 +29,7 @@ public class EjemploStringValidar {
         }
 
         boolean esVacio = curso2.length()==0;
-        boolean esVacio2 = curso.isEmpty();
+        boolean esVacio2 = curso2.isEmpty();
         boolean esVacio3 = curso.isBlank(); //este metodo valida que sea distinto de null, 
                                             //despues que sea distinto de empty 
                                             //y por ultimo que sea distinto de un espacio en blanco
@@ -40,15 +40,15 @@ public class EjemploStringValidar {
         // }
 
         if (!esVacio2) { //otra manera de corroborar que es vacio
-            System.out.println(curso2.toUpperCase());
-            System.out.println("Bienvenido al curso".concat(curso2));
+            System.out.println("1 " + curso2.toUpperCase());
+            System.out.println("2 Bienvenido al curso".concat(curso2));
         }
         
-        System.out.println(curso.toUpperCase());
-        System.out.println(curso.concat(" desde cero!"));
-        System.out.println("Bienvenido al curso".concat(curso));
-        System.out.println(curso.toUpperCase());
-        System.out.println("Bienvenido al curso " + curso); //de esta forma no va a dar exception error pero el valor va a ser null
+        System.out.println("3 " + curso.toUpperCase());
+        System.out.println("4 " + curso.concat(" desde cero!"));
+        System.out.println("5 Bienvenido al curso".concat(curso));
+        System.out.println("6 " + curso.toUpperCase());
+        System.out.println("7 Bienvenido al curso " + curso); //de esta forma no va a dar exception error pero el valor va a ser null
 
         //Entonces el metodo concat lo vamos a utilizar cuando el objeto string que vamos a concatenar tiene una instancia, no es nulo.
     }
