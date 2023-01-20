@@ -1,7 +1,7 @@
-package Variables;
+package Ejercicios;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-public class EjercicioOpcional {
+public class ejString {
     public static void main(String[] args) {
         /*
          * La tarea consiste en crear una nueva clase con el metodo main llamada DetalleDeFactura, 

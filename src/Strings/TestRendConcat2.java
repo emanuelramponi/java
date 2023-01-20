@@ -7,6 +7,8 @@ public class TestRendConcat2 {
         String b = "b";
         String c = a;
 
+        System.out.println(c);
+
         long inicio = System.currentTimeMillis();
 
         for (int i = 0; i < 500; i++) {

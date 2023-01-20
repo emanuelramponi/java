@@ -28,9 +28,9 @@ public class Validaciones {
             curso2="";//si el objeto es vacio, pero existe y tiene referencia, se verifica de la siguiente forma
         }
 
-        boolean esVacio = curso2.length()==0;
+        // boolean esVacio = curso2.length()==0;
         boolean esVacio2 = curso2.isEmpty();
-        boolean esVacio3 = curso.isBlank(); //este metodo valida que sea distinto de null, 
+        // boolean esVacio3 = curso.isBlank(); //este metodo valida que sea distinto de null, 
                                             //despues que sea distinto de empty 
                                             //y por ultimo que sea distinto de un espacio en blanco
 

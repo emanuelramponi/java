@@ -1,5 +1,5 @@
 package Variables.Primitivos;
-public class PrimitivosFloat {
+public class PFloat {
     static float varFlotante;
     public static void main(String[] args) {
         float realFloat = 2.12e3f; //2120f

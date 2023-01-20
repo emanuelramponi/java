@@ -1,5 +1,5 @@
 package Variables.Primitivos;
-public class PrimitivosEnteros {
+public class Enteros {
     public static void main(String[] args) {
         System.out.println("HELLO WORLD\n");
 

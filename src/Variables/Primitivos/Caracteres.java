@@ -1,5 +1,5 @@
 package Variables.Primitivos;
-public class PrimitivosCaracteres{
+public class Caracteres{
         public static void main(String[] args) {
             
             char caracter = '\u0040';

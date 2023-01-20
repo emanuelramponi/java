@@ -4,9 +4,9 @@ public class ConversionDeTipos {
 
         //CONVERSION DE CADENAS A PRIMITIVOS
         String numeroStr = "50";
-        String numeroStr2 = "234";
+        // String numeroStr2 = "234";
 
-        int numeroInt2 = Integer.parseInt(numeroStr2);
+        // int numeroInt2 = Integer.parseInt(numeroStr2);
         System.out.println("se paso el string a numero entero");
         int numeroInt = Integer.parseInt(numeroStr);
         System.out.println("numeroInt = " + numeroInt);

@@ -1,8 +1,8 @@
-package Variables;
+package Entradas;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class EntradaScanner {
+public class eScanner {
     public static void main(String[] args) {
             //otro metodo para pasar a int mediante scanner y por medio de otra exception  
             Scanner scanner = new Scanner(System.in);
