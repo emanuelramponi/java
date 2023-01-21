@@ -1,7 +1,5 @@
 package Operadores;
 
-import javax.management.InstanceNotFoundException;
-
 public class tInstaceOf {
     public static void main(String[] args) {
         String texto = "Creando un objeto de la clase string";
