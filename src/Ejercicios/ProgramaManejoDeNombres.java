@@ -27,9 +27,12 @@ public class ProgramaManejoDeNombres {
         
         for (int i = 0; i < nombres.length; i++)
         {
+            Character parte1 = nombres[i].toUpperCase().charAt(1) ;
+            String parte2 = nombres[i].substring(nombres[i].length()-2);
+            
             sb = (i==2)?
-            sb.append(nombres[i].toUpperCase().charAt(1)).append(".").append(nombres[i].substring(nombres[i].length()-2)):
-            sb.append(nombres[i].toUpperCase().charAt(1)).append(".").append(nombres[i].substring(nombres[i].length()-2)).append("_");
+            sb.append(parte1).append(".").append(parte2):
+            sb.append(parte1).append(".").append(parte2).append("_");
         }
         System.out.println(sb);
         scanner.close();
