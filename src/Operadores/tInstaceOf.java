@@ -18,6 +18,8 @@ public class tInstaceOf {
         Number decimal = 45.54;
         b1 = decimal instanceof Double;
         System.out.println("decimal es del tipo double? " + b1);
+
+        
     }
     
 }
