@@ -1,4 +1,4 @@
-package Ejercicios;
+package ClaseWrapper;
 
 public class ClasesWrapper {
     public static void main(String[] args) {
