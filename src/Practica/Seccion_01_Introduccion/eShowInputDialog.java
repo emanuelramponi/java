@@ -1,4 +1,6 @@
 package Practica.Seccion_01_Introduccion;
+import Practica.Seccion_03_Strings.Strings;
+
 import javax.swing.JOptionPane;
 
 public class eShowInputDialog {
