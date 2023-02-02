@@ -21,5 +21,7 @@ public class EjVariablesDeEntorno {
         
         String path2 = varEnv.get("PATH");
         System.out.println("path2 = " + path2);
+
+
     }
 }

@@ -32,5 +32,7 @@ public class AsignandoPropiedadadesDelSistema {
             System.out.println("No existe el archivo = " + e);
         }
 
+        //system contiene metodos y atributos estaticos solamente
+
     }
 }
