@@ -36,5 +36,35 @@ public class ClaseMath {
         System.out.println("random = " + random);
 
         System.out.println("colores = " + colores[(int) random]);
+
+        double piso2 = Math.exp(1);
+        System.out.println("piso2 = " + piso2);
+
+        double log = Math.log(10);
+        System.out.println("log = " + log);
+
+        double potencia = Math.pow(10,3);
+        System.out.println("potencia = " + potencia);
+
+        double raiz = Math.sqrt(5);
+        System.out.println("raiz = " + raiz);
+
+        //angulos en radianes a grados
+        double grados = Math.toDegrees(1.57);
+        grados = Math.round(grados);
+        System.out.println("Convertir a grados = " + grados);
+
+        //al revés
+        double radianes = Math.toRadians(90.00);
+        System.out.println("radianes = " + radianes);
+
+        System.out.println("sin(90): " + Math.sin(radianes));
+        System.out.println("cos(90): " + Math.cos(radianes));
+
+        radianes = Math.toRadians(180);
+        System.out.println("cos(180) " + Math.cos(radianes));
+
+        radianes = Math.toRadians(0.00);
+        System.out.println("cos(0): " + Math.cos(radianes));
     }
 }

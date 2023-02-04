@@ -40,5 +40,6 @@ COMPARAR STRING
     - boolean startsWith(String prefijo):   Dice si la cadena comienza ocn el prefijo indicado.
     - boolean endsWith(String sufijo):      Dice si la cadena termina con el sufijo indicado.
     - String[] split(String patron):        Divide la cadena en varias subcadenas utilizando el patron indicado como separador.
-    - String replace(target a reemplazar, string que quiero asignar) : Retorna una nueva instancia, la original queda igual
+    - String replace(target a reemplazar,
+    string que quiero asignar) :            Retorna una nueva instancia, la original queda igual
     -String contains()                      Lanza valor booleano segun si lo encuentra o no
