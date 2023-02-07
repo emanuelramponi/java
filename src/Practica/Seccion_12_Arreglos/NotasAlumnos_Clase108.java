@@ -28,8 +28,8 @@ public class NotasAlumnos_Clase108 {
                 boolean seguir = false;
 
 
-                int respuesta;
-                confirmacion:
+                int respuesta = 0;
+
                 do {
                     System.out.println("Quiere continuar con estas materias o modificarlas? (s/n)");
                     System.out.println("1- Continuar");
@@ -43,8 +43,13 @@ public class NotasAlumnos_Clase108 {
                     System.err.println(e);
                 }
 
-
-                    if (respuesta != 1  || respuesta != 2) {
+                    if (respuesta==2)
+                    {
+                        continue ingresandoAsignaturas;
+                    }
+                    else if (respuesta ==1) break;
+                    else
+                    {
                         System.err.println("\nHa ingresado una opcion incorrecta, vuelva a responder con una opcion válida\n");
                         seguir = true;
                     } else {
