@@ -29,7 +29,7 @@ public class ArreglosOrdenamientoBurbuja {
         int total = arreglo.length;
         System.out.println("=== Usando for ===");
         for (int i = 0; i <total ; i++) {
-            System.out.println("para indice  " + i + " : " + arreglo[i]);
+            System.out.println("para indice  " + (i+1) + " : " + arreglo[i]);
         }
 
     }

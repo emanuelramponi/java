@@ -9,7 +9,7 @@ public class Arreglos {
         int total2 = arreglo.length;
         int total = arreglo.length;
 
-        for (int i = 0; i <total2 ; i++) {
+        for (int i = 0; i <total2/2 ; i++) {
             String actual = arreglo[i];
             String inverso = arreglo[total-1-i];
             arreglo[i] = inverso;

@@ -1,65 +1,126 @@
 package Practica.Seccion_12_Arreglos;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class NotasAlumnos_Clase108 {
-    public static void main(String[] args) {
+
+    public static String[] ingresandoAsignaturas()
+    {
+        Scanner sc = new Scanner(System.in);
+        String[] asignaturas = new String[3];
+
+        for (int i = 0; i <asignaturas.length ; i++) {
+            System.out.print("Ingrese la " + (i+1) + "º asignatura: ");
+            asignaturas[i] = sc.nextLine();
+        }
+        return asignaturas;
+    }
+
+    public static String[] ingresandoNombres()
+    {
+        Scanner scn = new Scanner(System.in);
+        String[] alumnos = new String[7];
+
+        for (int i = 0; i <alumnos.length ; i++) {
+            System.out.print("Ingrese el " + (i+1) + "º alumno: ");
+            alumnos[i] = scn.nextLine();
+        }
+        return alumnos;
+    }
+
+    public static void menu(String[] arreglo)
+    {
+        System.out.println("Seleccione la informacion a modificar");
+        for (int i = 0; i <arreglo.length ; i++) {
+            System.out.println((i+1) + ". " + arreglo[i]);
+        }
+        System.out.println(arreglo.length+1 + ". Todas las anteriores");
+
+    }
+    public static String[] modificandoAsignaturas(String[] ignoredAsignaturas)
+    {
+        Scanner sc = new Scanner(System.in);
+        Scanner sca = new Scanner(System.in);
+
+        menu(ignoredAsignaturas);
+
+        int opcion = sca.nextInt();
+
+        System.out.println("\n");
+
+        if( opcion == 1 || opcion == 2 || opcion == 3)
+        {
+            ignoredAsignaturas[opcion - 1] = sc.nextLine();
+        }else if (opcion==4)
+        {
+            ignoredAsignaturas = ingresandoAsignaturas();
+        }
+        return ignoredAsignaturas;
+    }
+
+    public static int validacion ()
+    {
+        boolean seguir = true;
+        Scanner sc = new Scanner(System.in);
+        int respuesta = 0;
+
+        while (seguir){
+            System.out.println("Quiere continuar o modificar la informacion ingresada?");
+            System.out.println("1- Continuar");
+            System.out.println("2- Modificar");
+
+            respuesta = sc.nextInt();
+            System.out.println("\n");
+            if(respuesta == 1 || respuesta == 2)
+            {
+                seguir=false;
+            } else
+            {
+                System.out.println("Ha ingresado una opcion incorrecta, ingrese una válida");
+            }
+
+        }
+        return respuesta;
+    }
+
+
+
+    public static void main(String[] args)
+    {
         //Colegio con tres asignaturas. Para cada asignatura hay 7 alumnos, una nota para cada alumno en su asignatura correspondiente
         //Calcular   1. Promedio General del curso completo
         //            2. Promedio por asgignatura
         //             3. Promedio por alumno
         //              Por ejemplo leer el indicie del alumno y luego obtenemos una nota de las asignaturas y calculamos su promedio
 
-        String asignaturas[] = new String[3];
+        String[] asignaturas;
+        int respuesta;
 
-        Scanner sc = new Scanner(System.in);
+        asignaturas = ingresandoAsignaturas();
 
-        ingresandoAsignaturas:
-        for (int i = 0; i < asignaturas.length ; i++) {
-            System.out.print("Ingrese la " + (i+1) + "º asignatura: ");
-            asignaturas[i] = sc.nextLine();
-            if(i==2) {
-                System.out.println("\nUsted a ingresado las siguientes materias: ");
-                for (String s : asignaturas) {
-                    System.out.println(s);
-                }
-                System.out.println("\n");
-                boolean seguir = false;
+        respuesta = validacion();
 
-
-                int respuesta = 0;
-
-                do {
-                    System.out.println("Quiere continuar con estas materias o modificarlas? (s/n)");
-                    System.out.println("1- Continuar");
-                    System.out.println("2- Modificar las asignaturas");
-
-
-                    try{
-                        respuesta = sc.nextInt();
-                    }catch (InputMismatchException e) {
-                    System.err.println("Ingreso un dato erróneo, debe ingresar un numero entero");
-                    System.err.println(e);
-                }
-
-                    if (respuesta==2)
-                    {
-                        continue ingresandoAsignaturas;
-                    }
-                    else if (respuesta ==1) break;
-                    else
-                    {
-                        System.err.println("\nHa ingresado una opcion incorrecta, vuelva a responder con una opcion válida\n");
-                        seguir = true;
-                    } else {
-                        seguir = false;
-                    }
-                } while (seguir);
-
-
-            }
+        if(respuesta==2)
+        {
+            asignaturas = modificandoAsignaturas(asignaturas);
         }
+
+        String[] alumnos = ingresandoNombres();
+
+        respuesta = validacion();
+
+        if(respuesta==2)
+        {
+
+        }
+
+
+
+
+
 
     }
 }
+
+
+
