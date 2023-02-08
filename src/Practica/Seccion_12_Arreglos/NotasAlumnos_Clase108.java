@@ -4,6 +4,56 @@ import java.util.Scanner;
 
 public class NotasAlumnos_Clase108 {
 
+
+    public static void menuDespliegue(String[] menu)
+    {
+
+        System.out.println("============= MENU =============");
+        for (int i = 0; i < menu.length; i++) {
+            System.out.println((i+1) + ". " + menu[i]);
+        }
+        System.out.print("Opcion: ");
+
+    }
+
+    public static int menuInteraccion()
+    {
+        String[] menuPrincipalArray =
+                {   "Ingresar nombres de alumnos",
+                        "Ingresar asignaturas",
+                        "Ingresar notas" ,
+                        "Modificar informacion",
+                        "Mostrar Informacion",
+                        "Salir"
+                };
+//
+        Scanner opMenu = new Scanner(System.in);
+        String option = "";
+        int optionNumber = 0;
+
+        boolean seguirMenu = true;
+        System.out.println(menuPrincipalArray.length);
+
+        while(seguirMenu) {
+            menuDespliegue(menuPrincipalArray);
+            option = opMenu.nextLine();
+
+            try {
+                optionNumber = Integer.parseInt(option);
+            }catch (NumberFormatException e)
+            {
+                System.err.println("Ingrso un formato erroneo, debe ser numero entero");
+                System.err.println(e);
+            }
+
+            if (optionNumber <= 0 || optionNumber > menuPrincipalArray.length ) {
+                System.err.println("\n¡OPCION INEXISTENTE!\n");
+            }else{
+                seguirMenu=false;
+            }
+        }
+        return optionNumber;
+    }
     public static String[] ingresandoAsignaturas()
     {
         Scanner sc = new Scanner(System.in);
@@ -28,7 +78,7 @@ public class NotasAlumnos_Clase108 {
         return alumnos;
     }
 
-    public static void menu(String[] arreglo)
+    public static void menuOpciones(String[] arreglo)
     {
         System.out.println("Seleccione la informacion a modificar");
         for (int i = 0; i <arreglo.length ; i++) {
@@ -42,7 +92,7 @@ public class NotasAlumnos_Clase108 {
         Scanner sc = new Scanner(System.in);
         Scanner sca = new Scanner(System.in);
 
-        menu(ignoredAsignaturas);
+        menuOpciones(ignoredAsignaturas);
 
         int opcion = sca.nextInt();
 
@@ -58,64 +108,77 @@ public class NotasAlumnos_Clase108 {
         return ignoredAsignaturas;
     }
 
-    public static int validacion ()
+//    public static int validacion ()
+//    {
+//        boolean seguir = true;
+//        Scanner sc = new Scanner(System.in);
+//        int respuesta = 0;
+//
+//        while (seguir){
+//            System.out.println("Quiere continuar o modificar la informacion ingresada?");
+//            System.out.println("1- Continuar");
+//            System.out.println("2- Modificar");
+//
+//            respuesta = sc.nextInt();
+//            System.out.println("\n");
+//            if(respuesta == 1 || respuesta == 2)
+//            {
+//                seguir=false;
+//            } else
+//            {
+//                System.out.println("Ha ingresado una opcion incorrecta, ingrese una válida");
+//            }
+//
+//        }
+//        return respuesta;
+//    }
+
+
+    public static void submenu()
     {
-        boolean seguir = true;
-        Scanner sc = new Scanner(System.in);
-        int respuesta = 0;
-
-        while (seguir){
-            System.out.println("Quiere continuar o modificar la informacion ingresada?");
-            System.out.println("1- Continuar");
-            System.out.println("2- Modificar");
-
-            respuesta = sc.nextInt();
-            System.out.println("\n");
-            if(respuesta == 1 || respuesta == 2)
-            {
-                seguir=false;
-            } else
-            {
-                System.out.println("Ha ingresado una opcion incorrecta, ingrese una válida");
-            }
-
-        }
-        return respuesta;
+        String[]
     }
-
 
 
     public static void main(String[] args)
     {
-        //Colegio con tres asignaturas. Para cada asignatura hay 7 alumnos, una nota para cada alumno en su asignatura correspondiente
+        //Colegio con tres asignaturas. Para cada asignatura hay 7 alumnos, una nota para cada alumno en su asignatura
+        // correspondiente
         //Calcular   1. Promedio General del curso completo
         //            2. Promedio por asgignatura
         //             3. Promedio por alumno
-        //              Por ejemplo leer el indicie del alumno y luego obtenemos una nota de las asignaturas y calculamos su promedio
+        //              Por ejemplo leer el indicie del alumno y luego obtenemos una nota de las asignaturas y
+        //              calculamos su promedio
 
-        String[] asignaturas;
-        int respuesta;
+//        String[] asignaturas;
+//        int respuesta;
+//
+//        asignaturas = ingresandoAsignaturas();
+//
+//        respuesta = validacion();
+//
+//        if(respuesta==2)
+//        {
+//            asignaturas = modificandoAsignaturas(asignaturas);
+//        }
+//
+//        String[] alumnos = ingresandoNombres();
+//
+//        respuesta = validacion();
 
-        asignaturas = ingresandoAsignaturas();
 
-        respuesta = validacion();
 
-        if(respuesta==2)
-        {
-            asignaturas = modificandoAsignaturas(asignaturas);
+        int opcionElegida = menuInteraccion();
+
+
+        switch (opcionElegida){
+            case 1: String[] alumnos = ingresandoNombres(); break;
+            case 2: String[] asignaturas = ingresandoAsignaturas(); break;
+            case 3: break;
+            case 4: break;
+            case 5: break;
+            case 6: break;
         }
-
-        String[] alumnos = ingresandoNombres();
-
-        respuesta = validacion();
-
-        if(respuesta==2)
-        {
-
-        }
-
-
-
 
 
 
