@@ -136,7 +136,28 @@ public class NotasAlumnos_Clase108 {
 
     public static void submenu()
     {
-        String[]
+        Scanner scSB = new Scanner(System.in);
+
+        String[] information = {"Asignaturas","Alumnos","Notas"};
+        System.out.println("============= MENU =============");
+        for (int i = 0; i < ; i++) {
+            System.out.println("============= MENU =============");
+            for (int i = 0; i < information.length; i++) {
+                System.out.println((i+1) + ". " + information[i]);
+            }
+
+            System.out.print("Opcion: ");
+            int option = scSB.nextInt();
+
+            switch (option){
+                case 1:  menuOpciones();break;
+                case 2: break;
+                case 3: break;
+                default: break;
+            }
+
+
+        }
     }
 
 
@@ -166,7 +187,7 @@ public class NotasAlumnos_Clase108 {
 //
 //        respuesta = validacion();
 
-
+        String[] informacion = {"Materias","Alumnos","Notas"}:
 
         int opcionElegida = menuInteraccion();
 
@@ -174,7 +195,7 @@ public class NotasAlumnos_Clase108 {
         switch (opcionElegida){
             case 1: String[] alumnos = ingresandoNombres(); break;
             case 2: String[] asignaturas = ingresandoAsignaturas(); break;
-            case 3: break;
+            case 3: String [][] notasAlumnos;break;
             case 4: break;
             case 5: break;
             case 6: break;
